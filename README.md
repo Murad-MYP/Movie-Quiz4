@@ -31,3 +31,23 @@ MovieQuiz - это приложение с квизами о фильмах из
 - Приложение должно поддерживать устройства iPhone с iOS 15, предусмотрен только портретный режим;
 - Элементы интерфейса адаптируются под разрешения экранов iPhone, начиная с X — вёрстка под SE и iPad не предусмотрена;
 - Экраны соответствует макету — использованы верные шрифты нужных размеров, все надписи находятся на нужном месте, расположение всех элементов, размеры кнопок и отступы — точно такие же, как в макете.
+# Movie-Quiz4
+# Movie-Quiz
+# Movie-Quiz
+# Movie-Quiz
+# Movie-Quiz
+# Movie-Quiz
+# Movie-Quiz
+# Movie_Quiz
+# Movie_Quiz
+# Movie
+# Movie_Quiz
+# Movie_Quiz4
+# Movie_Quiz4
+# Movie_Quiz4
+# Movie_Quiz4
+# Movie_Quiz4
+# Movie-Quiz4
+# Movie-Quiz
+# Movie-Quiz
+# Movie-Quiz4
