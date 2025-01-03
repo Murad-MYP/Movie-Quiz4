@@ -2,29 +2,21 @@ import UIKit
 
 final class MovieQuizViewController: UIViewController {
     // MARK: - ViewModel Structures
-    struct ViewModel {
+    
+ private struct QuizStepViewModel {
         let image: UIImage
         let question: String
         let questionNumber: String
     }
     
-    struct QuizStepViewModel {
-        let image: UIImage
-        let question: String
-        let questionNumber: String
-    }
-    
-    struct QuizResultsViewModel {
+private struct QuizResultsViewModel {
         let title: String
         let text: String
         let buttonText: String
     }
     
-    struct ResponseResultViewModel {
-        let result: Bool
-    }
     
-    struct QuizQuestion {
+private struct QuizQuestion {
         let image: String
         let text: String
         let correctAnswer: Bool
@@ -51,7 +43,7 @@ final class MovieQuizViewController: UIViewController {
     // MARK: - UI Elements
     @IBOutlet private var yesButton: UIButton!
     @IBOutlet private var noButton: UIButton!
-    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet private var questionLabel: UILabel!
     @IBOutlet private var counterLabel: UILabel!
     @IBOutlet private var textLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
@@ -75,7 +67,7 @@ final class MovieQuizViewController: UIViewController {
 
         imageView.layer.masksToBounds = true
         imageView.layer.borderWidth = 8
-        imageView.layer.borderColor = isCorrect ? UIColor.green.cgColor : UIColor.red.cgColor
+        imageView.layer.borderColor = isCorrect ? UIColor.ypGreen.cgColor : UIColor.ypRed.cgColor
         
         if isCorrect {
             correctAnswers += 1
