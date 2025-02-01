@@ -1,12 +1,9 @@
-//
-//  AlertPresenter.swift
-//  MovieQuiz
-//
-//  Created by 0000 on 23.01.2025.
-//
-
 import Foundation
 
-class AlertPresenter {
+struct AlertModel {
     
+    let title: String
+    let message: String
+    let buttonText: String
+    let completion: (() -> Void)?
 }
