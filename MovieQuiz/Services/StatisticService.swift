@@ -14,8 +14,6 @@ final class StatisticService {
         case gamesCount
     }
 }
-
-
     extension StatisticService: StatisticServiceProtocol {
         var gamesCount: Int {
             get {
@@ -25,7 +23,6 @@ final class StatisticService {
                 storage.set(newValue, forKey: Keys.gamesCount.rawValue)
             }
         }
-        
     // correctAnswers
         var correctAnswers: Int {
             get {
