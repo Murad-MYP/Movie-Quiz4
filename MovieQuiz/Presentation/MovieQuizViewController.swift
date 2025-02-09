@@ -122,6 +122,9 @@
             
             isAlertPresented = true
             
+            // Обновляем статистику перед показом результатов
+                statisticService.store(correct: correctAnswers, total: questionsAmount)
+            
             let bestGame = statisticService.bestGame
             let gamesCount = statisticService.gamesCount
             let accuracy = statisticService.totalAccuracy
@@ -135,7 +138,7 @@
             let message = """
                 Ваш результат: \(correctAnswers)/\(questionsAmount)
                 Количество сыгранных квизов: \(gamesCount)
-                Рекорд: \(statisticService.bestGame.correct)/\(statisticService.bestGame.total) (\(formattedDate)
+                Рекорд: \(statisticService.bestGame.correct)/\(statisticService.bestGame.total) (\(formattedDate))
                 Средняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%
                 """
             
